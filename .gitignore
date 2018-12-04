@@ -1,0 +1,4 @@
+*.tfstate*
+*.terraform*
+*passwords.tf*
+*machines.md*
