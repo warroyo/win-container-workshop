@@ -1,0 +1,12 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: hashicorp/packer
+
+inputs:
+  - name: workshop
+
+run:
+  path: ./workshop/ci/tasks/packer/task.sh

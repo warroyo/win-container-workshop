@@ -38,7 +38,6 @@ $vbsScript | Out-File 'c:\Program Files\sysinternals\bginfo.vbs'
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name bginfo -Value 'wscript "c:\Program Files\sysinternals\bginfo.vbs"'
 wscript "c:\Program Files\sysinternals\bginfo.vbs"
 
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-TCP\" -Name PortNumber -Value 443
 
 Write-Output 'Install Chocolatey'
 Invoke-WebRequest 'https://chocolatey.org/install.ps1' -UseBasicParsing | Invoke-Expression

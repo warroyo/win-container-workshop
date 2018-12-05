@@ -29,6 +29,10 @@ variable "admin_username" {
   default = "workshop_admin"
 }
 
+variable "workshop_image" {
+  default = "win2019-docker"
+}
+
 variable "vm_size" {
   default = "Standard_D4s_v3"
 }

@@ -40,6 +40,9 @@ $Shortcut.Save()
 docker run --rm mcr.microsoft.com/windows/servercore:ltsc2019 cmd
 docker run --rm mcr.microsoft.com/windows/nanoserver:1809 cmd
 
+#change rdp port
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-TCP\" -Name PortNumber -Value 443
+
 Write-Output Cleaning up
 Remove-Item C:\provision.ps1
 

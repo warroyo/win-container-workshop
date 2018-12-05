@@ -53,10 +53,7 @@ resource "azurerm_virtual_machine" "windows" {
   vm_size               = "${var.vm_size}"
 
   storage_image_reference {
-        publisher = "MicrosoftWindowsServer"
-        offer     = "WindowsServer"
-        sku       = "2019-Datacenter-with-Containers"
-        version   = "latest"
+    id = "${data.azurerm_image.workshop_image.id}"
   }
 
   storage_os_disk {
