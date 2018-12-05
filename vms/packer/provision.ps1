@@ -54,6 +54,9 @@ choco install -y googlechrome
 Write-Output 'Install Docker Compose'
 choco install -y docker-compose
 
+Write-Output 'Install CF CLI'
+choco install cloudfoundry-cli
+
 if (Test-Path $env:ProgramFiles\docker) {
   Write-Output Update Docker
   Install-Package -Name docker -ProviderName $docker_provider -Verbose -Update  -Force
