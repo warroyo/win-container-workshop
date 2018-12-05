@@ -67,6 +67,7 @@ jobs:
       COUNT: 1
   - put: terraform
     params:
+      env_name: workshop
       terraform_source: terraform-files
   - put: slack-alert
     params:
