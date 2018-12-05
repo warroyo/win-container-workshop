@@ -85,3 +85,5 @@ jobs:
       action: destroy
       env_name: workshop
       terraform_source: terraform-files
+    get_params:
+      action: destroy
