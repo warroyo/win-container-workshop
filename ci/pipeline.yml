@@ -50,7 +50,6 @@ jobs:
 - name: packer-azure
   plan:
   - get: workshop
-    trigger: true
   - task: packer
     file: workshop/ci/tasks/packer/task.yml
     params:
