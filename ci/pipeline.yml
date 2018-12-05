@@ -21,12 +21,6 @@ resource_types:
   
 
 resources:
-- name: workshop-packer
-  type: git
-  source:
-    uri: https://github.com/warroyo/win-container-workshop
-    paths: 
-      - vms/packer/*
 - name: workshop
   type: git
   source:
@@ -55,10 +49,10 @@ resources:
 jobs:
 - name: packer-azure
   plan:
-  - get: workshop-packer
+  - get: workshop
     trigger: true
   - task: packer
-    file: workshop-packer/ci/tasks/packer/task.yml
+    file: workshop/ci/tasks/packer/task.yml
     params:
       ARM_CLIENT_ID: ((arm_client_id))
       ARM_CLIENT_SECRET: ((arm_client_secret))

@@ -6,7 +6,7 @@ image_resource:
     repository: hashicorp/packer
 
 inputs:
-  - name: workshop-packer
+  - name: workshop
 
 run:
-  path: ./workshop-packer/ci/tasks/packer/task.sh
+  path: ./workshop/ci/tasks/packer/task.sh
