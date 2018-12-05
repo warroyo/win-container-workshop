@@ -2,6 +2,6 @@
 set -e 
 cd workshop/vms/terraform
 
-./create-passwords $COUNT
+./create-passwords.sh $COUNT
 
 cp -r * ../../../terraform-files
