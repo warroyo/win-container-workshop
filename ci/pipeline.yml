@@ -76,6 +76,10 @@ jobs:
 - name: terraform-destroy-azure
   plan:
   - get: workshop
+  - task: create-passwords
+    file: workshop/ci/tasks/passwords/task.yml
+    params:
+      COUNT: 0
   - put: terraform
     params:
       action: destroy
