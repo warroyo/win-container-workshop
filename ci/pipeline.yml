@@ -79,4 +79,5 @@ jobs:
   - put: terraform
     params:
       action: destroy
-      terraform_source: workshop/vms/terraform
+      env_name: workshop
+      terraform_source: terraform-files
