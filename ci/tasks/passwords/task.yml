@@ -11,4 +11,4 @@ outputs:
   - name: terraform-files
 
 run:
-  path: ./workshop/ci/tasks/password/task.sh
+  path: ./workshop/ci/tasks/passwords/task.sh
