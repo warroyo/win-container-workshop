@@ -2,4 +2,4 @@
 
 ## Windows Container Workshop
 
-![](assets/img/docker-windows.png)
+![](assets/img/docker-windows.jpg)
