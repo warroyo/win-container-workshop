@@ -5,9 +5,7 @@
 ![](assets/img/docker-windows.jpg)
 
 ---
-@snap[north-west]
 ## Agenda
-@snapend
 
 - Why Containers?
 - Intro to Docker(hands on)
