@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e 
-
-packer build workshop/vms/packer/windows2019.json
+cd workshop/vms/packer/
+packer build windows2019.json
