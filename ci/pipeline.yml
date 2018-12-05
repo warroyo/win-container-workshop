@@ -4,7 +4,8 @@ groups:
   - packer-azure
 - name: Terraform
   jobs:
-  - terraform-azure
+  - terraform-create-azure
+  - terraform-destroy-azure
 
 resource_types:
 - name: terraform
@@ -30,20 +31,20 @@ resources:
     url: ((slack_webhook))
 
 - name: terraform
-    type: terraform
-    source:
-      env_name: workshop
-      backend_type: azurerm
-      backend_config:
-        resource_group_name: terraform-state
-        storage_account_name: watfstate
-        container_name: win-workshop-tfstate
-        key: winworkshop.terraform.tfstate
-      env:
-        ARM_CLIENT_ID: ((arm_client_id))
-        ARM_CLIENT_SECRET: ((arm_client_secret))
-        ARM_TENANT_ID: ((arm_tenant_id))
-        ARM_SUBSCRIPTION_ID: ((arm_subscription_id))
+  type: terraform
+  source:
+    env_name: workshop
+    backend_type: azurerm
+    backend_config:
+      resource_group_name: terraform-state
+      storage_account_name: watfstate
+      container_name: win-workshop-tfstate
+      key: winworkshop.terraform.tfstate
+    env:
+      ARM_CLIENT_ID: ((arm_client_id))
+      ARM_CLIENT_SECRET: ((arm_client_secret))
+      ARM_TENANT_ID: ((arm_tenant_id))
+      ARM_SUBSCRIPTION_ID: ((arm_subscription_id))
 
 jobs:
 - name: packer-azure

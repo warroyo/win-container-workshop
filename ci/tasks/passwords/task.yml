@@ -1,0 +1,14 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: kciepluc/pwgen-docker
+
+inputs:
+  - name: workshop
+outputs:
+  - name: terraform-files
+
+run:
+  path: ./workshop/ci/tasks/password/task.sh
