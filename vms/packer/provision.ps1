@@ -55,7 +55,7 @@ Write-Output 'Install Docker Compose'
 choco install -y docker-compose
 
 Write-Output 'Install CF CLI'
-choco install cloudfoundry-cli
+choco install -y cloudfoundry-cli
 
 if (Test-Path $env:ProgramFiles\docker) {
   Write-Output Update Docker
