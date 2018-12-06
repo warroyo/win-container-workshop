@@ -5,17 +5,11 @@
 ![](assets/img/docker-windows.jpg)
 
 ---
-@snap[north-west]
-## Agenda
-@snapend
+### Agenda
 
-@snap[west]
-@ul
-- Why Containers?
-- Intro to Docker(hands on)
-- Run an application in Docker(hands on)
-- Intro to PAS
-- Deploy an app to PAS
-- CI/CD example
-@ulend
-@snapend
+* Why Containers?
+* Intro to Docker(hands on)
+* Run an application in Docker(hands on)
+* Intro to PAS
+* Deploy an app to PAS
+* CI/CD example
