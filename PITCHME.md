@@ -11,10 +11,14 @@
 * Containers 101
 * Intro to Docker(hands on)
 * Run an application in Docker(hands on)
+* Why do we an orchestrator?
 * Intro to PAS
-* Deploy an app to PAS
+* Deploy an app to PAS(hands on)
 * CI/CD example
 
+@snap[south]
+Feel free to interrupt with questions anytime!
+@snapend
 ---
 # Containers 101
 ---
@@ -54,10 +58,13 @@
 ---
 ### Running containers in the background 
 ---
-### Cleaning up containers
+### Exec into a container
 ---
 ### Leveraging existing containers
 ---
+### Dockerfiles
+---
+### Cleaning up containers
 
 # Running an Script in Docker
 ---
