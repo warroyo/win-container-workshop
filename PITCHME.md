@@ -10,7 +10,7 @@
 @snapend
 
 @snap[west]
-@ul[spaced]
+@ul
 - Why Containers?
 - Intro to Docker(hands on)
 - Run an application in Docker(hands on)
