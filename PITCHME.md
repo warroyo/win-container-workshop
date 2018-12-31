@@ -53,7 +53,7 @@ Feel free to interrupt with questions anytime!
 * Share the same OS kernel
 * Containers native to Windows Server 2019 much improved since 2016
 @snapend
-@snap[west sidebar]
+@snap[east sidebar]
 ![what is a container](assets/img/what_is_a_container.png)
 @snapend
 ---
