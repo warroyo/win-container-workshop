@@ -9,3 +9,4 @@ This is a collection fo resources for running a windows container workshop based
 # Credits and Resources
 
 *  https://github.com/StefanScherer/windows-docker-workshop for most of the packer/terraform 
+*  https://stefanscherer.github.io/docker-on-windows-server-2019/
