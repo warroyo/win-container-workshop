@@ -60,12 +60,15 @@ Feel free to interrupt with questions anytime!
     * containerd
     * rkt
   
----?image=assets/img/runtime-architecture.png
+---
 ### Container Runtimes
 
----?image=assets/img/highlevel_docker.png
+![runtime arch](assets/img/runtime-architecture.png)
+
+---
 ### Container Runtimes
 
+![docker arch](assets/img/highlevel_docker.png)
 ---
 ### Why containers
 ---
