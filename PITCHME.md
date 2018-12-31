@@ -48,10 +48,12 @@ Feel free to interrupt with questions anytime!
 ### What is a container?
 @snapend
 @snap[west]
-* Standarized packaging for software and dependencies
-* Isolate apps from each other
-* Share the same OS kernel
-* Containers native to Windows Server 2019 much improved since 2016
+@ol
+- Standarized packaging for software and dependencies
+- Isolate apps from each other
+- Share the same OS kernel
+- Containers native to Windows Server 2019 much improved since 2016
+- @olend
 @snapend
 @snap[east sidebar]
 ![what is a container](assets/img/what_is_a_container.png)
