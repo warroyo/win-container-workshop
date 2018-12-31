@@ -44,11 +44,15 @@ Feel free to interrupt with questions anytime!
     * started with LXC and then developed libcontainer.
   
 ---?image=assets/img/what_is_a_container.png
+@snap[north-west]
 ### What is a container?
+@snapend
+@snap[west]
 * Standarized packaging for software and dependencies
 * Isolate apps from each other
 * Share the same OS kernel
 * Containers native to Windows Server 2019 much improved since 2016
+@snapend
 ---
 ### Container runtimes
 * Low Level
