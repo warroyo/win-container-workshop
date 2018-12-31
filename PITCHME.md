@@ -43,7 +43,7 @@ Feel free to interrupt with questions anytime!
 * 2013 - Docker
     * started with LXC and then developed libcontainer.
   
----?image=assets/img/what_is_a_container.png
+---
 @snap[north-west]
 ### What is a container?
 @snapend
@@ -52,6 +52,9 @@ Feel free to interrupt with questions anytime!
 * Isolate apps from each other
 * Share the same OS kernel
 * Containers native to Windows Server 2019 much improved since 2016
+@snapend
+@snap[west sidebar]
+![what is a container](assets/img/what_is_a_container.png)
 @snapend
 ---
 ### Container runtimes
