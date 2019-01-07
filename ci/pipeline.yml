@@ -64,7 +64,7 @@ jobs:
   - task: create-passwords
     file: workshop/ci/tasks/passwords/task.yml
     params:
-      COUNT: 1
+      COUNT: 15
   - put: terraform
     params:
       env_name: workshop
