@@ -5,7 +5,7 @@ variable "dns_prefix" {
 }
 
 variable "count" {
-  default = "15"
+  default = "17"
 }
 
 variable "group_name" {
