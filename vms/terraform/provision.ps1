@@ -42,6 +42,7 @@ docker run --rm mcr.microsoft.com/windows/nanoserver:1809 cmd
 
 #setup workspace dir
 $sharepath = "workspace"
+mkdir $sharepath
 $Acl = Get-ACL $SharePath
 $AccessRule= New-Object System.Security.AccessControl.FileSystemAccessRule("everyone","FullControl","ContainerInherit,Objectinherit","none","Allow")
 $Acl.AddAccessRule($AccessRule)
