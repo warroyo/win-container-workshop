@@ -40,6 +40,13 @@ $Shortcut.Save()
 docker run --rm mcr.microsoft.com/windows/servercore:ltsc2019 cmd
 docker run --rm mcr.microsoft.com/windows/nanoserver:1809 cmd
 
+#setup workspace dir
+$sharepath = "workspace"
+$Acl = Get-ACL $SharePath
+$AccessRule= New-Object System.Security.AccessControl.FileSystemAccessRule("everyone","FullControl","ContainerInherit,Objectinherit","none","Allow")
+$Acl.AddAccessRule($AccessRule)
+Set-Acl $SharePath $Acl
+
 #turn off firewall
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 #change rdp port
