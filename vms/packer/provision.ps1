@@ -44,7 +44,7 @@ Invoke-WebRequest 'https://chocolatey.org/install.ps1' -UseBasicParsing | Invoke
 
 Write-Output 'Install editors'
 choco install -y vscode
-choco install -y visualstudio2017enterprise
+choco install -y visualstudio2017community
 
 Write-Output 'Install Git'
 choco install -y git
